@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> </title>
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="services.css">
+<style>
+    #contacts_section {
+        gap: 40px;
+        height: fit-content;
+    }
+
+    #contacts_section h5 {
+        letter-spacing: 3px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .contact-links {
+        color: #f5f5dc;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .contact-links:hover {
+        color: #b87773;
+    }
+
+    #contacts_sub_section {
+        background-color: #2e2e2e;
+        width: 100%;
+        color: #f5f5dc;
+        font-size: 1.2rem;
+        height: 30vh;
+    }
+
+    #contacts_sub_section hr {
+        width: 80%;
+        height: 5px;
+        background-color: #f5f5dc;
+    }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+
+<body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="progress-bar"></div>
+
+    <nav class="navbar navbar-expand-lg px-5 py-3" id="navbar">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="navbar-brand">John's Chimney & Fireplace Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0" style="gap: 20px;">
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="nav_resources" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="nav_resources">
+                            <li><a href="our-work.html" class="dropdown-item">Our Work</a></li>
+                            <li><a href="about-us.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="faqs.html" class="dropdown-item">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button onclick="redirect()" id="navbar_button" class="btn">Request a Quote</button>
+                    </li>
+                </ul>
+                <form action="index.html" id="search_bar_form" class="d-flex" method="get">
+                    <div class="input-group">
+                        <input class="form-control" type="text" id="search_bar_input" placeholder="Search...">
+                        <span class="input-group-text" style="background-color: #b87773; border: 1px solid #333333;">
+                            <i class="bi bi-search" style="color: #f5f5dc;"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid d-flex" id="services_title_section">
+        <div class="service_title_section_div">
+            <h1> Fireplace and Chimney Services in Southern California </h1>
+            <br>
+            <p class=" lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum possimus pariatur sint odit
+                praesentium dicta labore? Rem sit placeat at reprehenderit, praesentium, voluptatum ullam voluptatem
+                harum a dolorem enim.
+            </p>
+        </div>
+        <div class="service_title_section_div">
+            <button class="mt-5" id="service_title_button"> <i class="bi bi-arrow-right-circle-fill"></i> Request a
+                Quote Now </button>
+            <p class="my-4" style="font-size: 1.5rem;"> Or Call us: 222-888-4242</p>
+            <a href="#bad_chimney_div" class="mt-5"> See why you might need an inspection <i
+                    class="bi bi-arrow-down-circle-fill"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="container-fluid d-flex align-items-center justify-content-center flex-column p-5"
+        id="services_section">
+        <div class="d-flex services_section_divs">
+            <div class="services_section_boxes">
+                <img src="images/chimneysweep.jpeg" alt="" width="300px">
+                <h3 class="mt-2"> Chimney Sweep </h3>
+                <hr>
+                <a href="#"> Learn More...</a>
+            </div>
+            <div class="services_section_boxes">
+                <img src="images/chimneyinspection.jpeg" alt="" width="300px">
+                <h3 class="mt-2"> Chimney Inspection </h3>
+                <hr>
+                <a href="#"> Learn More...</a>
+            </div>
+            <div class="services_section_boxes">
+                <img src="images/fireplaceremodel.jpeg" alt="" width="300px" height="300px">
+                <h3 class="mt-2"> Fireplace Remodel </h3>
+                <hr>
+                <a href="#"> Learn More...</a>
+            </div>
+        </div>
+        <div class="d-flex services_section_divs">
+            <div class="services_section_boxes">
+                <img src="images/chimneyrepair.jpeg" alt="" width="300px">
+                <h3 class="mt-2"> Chimney Repair </h3>
+                <hr>
+                <a href="#"> Learn More...</a>
+            </div>
+            <div class="services_section_boxes">
+                <img src="images/fireplaceinserts.jpeg" alt="" width="300px">
+                <h3 class="mt-2"> Fireplace Inserts </h3>
+                <hr>
+                <a href="#"> Learn More...</a>
+            </div>
+            <div class="services_section_boxes">
+                <img src="images/fireplacegaslogs.webp" alt="" width="300px">
+                <h3 class="mt-2"> Fireplace Gas Logs </h3>
+                <hr>
+                <a href="#"> Learn More...</a>
+            </div>
+        </div>
+        <div class="d-flex services_section_divs">
+            <div class="services_section_boxes">
+                <img src="images/fireplacemantels.jpeg" alt="" width="300px" height="300px">
+                <h3 class="mt-2"> Fireplace Custom Mantel </h3>
+                <hr>
+                <a href="#"> Learn More...</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services_text_section">
+        <h1>John's Chimney & Fireplace Services</h1>
+
+        <div class="services_text_div">
+            <h2>Why Choose John's Chimney & Fireplace Services?</h2>
+            <p>Welcome to John's Chimney & Fireplace Services, where we prioritize your safety, comfort, and
+                satisfaction. With years of experience and a commitment to excellence, we are the leading choice for
+                all
+                your chimney and fireplace needs. Here's why our services are the best and most professional in the
+                industry:</p>
+            <ul>
+                <li><strong>Expert Technicians</strong>: Our team consists of highly trained and certified
+                    technicians
+                    who have extensive knowledge of all types of chimneys and fireplaces. We ensure that our staff
+                    is
+                    equipped with the latest techniques and tools to provide top-notch service.</li>
+                <li><strong>Comprehensive Services</strong>: From chimney sweeping and inspections to repairs and
+                    installations, we offer a full range of services. Whether you need a routine check-up or a
+                    complete
+                    overhaul, we've got you covered.</li>
+                <li><strong>Quality and Safety</strong>: We use the best materials and follow stringent safety
+                    protocols
+                    to ensure that your chimney and fireplace are safe and efficient. Our dedication to quality
+                    means
+                    you can trust us to keep your home warm and secure.</li>
+                <li><strong>Customer Satisfaction</strong>: Our customers are our top priority. We take pride in our
+                    exceptional customer service, prompt responses, and transparent communication. Your satisfaction
+                    is
+                    guaranteed with John's Chimney & Fireplace Services.</li>
+                <li><strong>Affordable Pricing</strong>: We believe that quality service should be accessible to
+                    everyone. That's why we offer competitive pricing without compromising on quality. We provide
+                    detailed estimates, so there are no surprises.</li>
+            </ul>
+        </div>
+
+        <div id="bad_chimney_div" class="services_text_div">
+            <h2>Signs of a Bad Chimney</h2>
+            <p>It's crucial to recognize the signs of a chimney in need of repair or inspection. Here are some
+                indicators that you may have a bad chimney:</p>
+            <ul>
+                <li><strong>Cracked or Damaged Bricks</strong>: Visible cracks or damage to the bricks and mortar
+                    can
+                    weaken the structure of your chimney, leading to potential hazards.</li>
+                <li><strong>Smoke Indoors</strong>: If you notice smoke entering your home instead of exiting
+                    through
+                    the chimney, it's a clear sign of blockage or poor ventilation.</li>
+                <li><strong>Soot and Creosote Buildup</strong>: Excessive soot or creosote accumulation can increase
+                    the
+                    risk of chimney fires and reduce the efficiency of your fireplace.</li>
+                <li><strong>Water Damage</strong>: Water stains, mold, or dampness around the chimney can indicate
+                    leaks
+                    that need immediate attention.</li>
+                <li><strong>Strange Odors</strong>: Unusual smells emanating from your fireplace or chimney can
+                    signal
+                    trapped moisture or debris.</li>
+            </ul>
+        </div>
+
+        <div class="services_text_div">
+            <h2>Why Request an Inspection?</h2>
+            <p>Requesting a chimney inspection is a proactive step to ensure the safety and longevity of your
+                fireplace.
+                Here's why you should consider scheduling an inspection with us:</p>
+            <ul>
+                <li><strong>Preventative Maintenance</strong>: Regular inspections help identify potential issues
+                    before
+                    they become costly repairs or safety hazards.</li>
+                <li><strong>Improved Efficiency</strong>: A well-maintained chimney ensures that your fireplace
+                    operates
+                    efficiently, saving you money on energy costs.</li>
+                <li><strong>Peace of Mind</strong>: Knowing that your chimney and fireplace are in good condition
+                    gives
+                    you peace of mind, especially during the colder months.</li>
+                <li><strong>Expert Advice</strong>: Our technicians provide expert advice on maintaining your
+                    chimney
+                    and fireplace, helping you make informed decisions.</li>
+            </ul>
+            <p>Don't wait until it's too late. Contact John's Chimney & Fireplace Services today to schedule your
+                inspection and experience the best in chimney care.</p>
+        </div>
+    </section>
+
+
+    <section style="width: 100%; height: 30vh; background-color: #333333;"></section>
+    <section class="container-fluid d-flex justify-content-evenly p-5" id="contacts_section"
+        style="background-color: #2e2e2e; color: #f5f5dc;">
+        <img class="ms-3" src="images/logo.png" alt="" width="400px">
+        <ul type="none">
+            <h5> Quick Links </h5>
+            <li>
+                <a class="contact-links" href="services.html"> Services </a>
+            </li>
+            <li>
+                <a class="contact-links" href="our-work.html"> Our Work </a>
+            </li>
+            <li>
+                <a class="contact-links" href="about-us.html"> About us </a>
+            </li>
+            <li>
+                <a class="contact-links" href="faqs.html"> FAQs </a>
+            </li>
+            <li>
+                <a class="contact-links" href="contact.html"> Contact us </a>
+            </li>
+        </ul>
+        <div>
+            <ul type="none">
+                <h5> Contacts </h5>
+                <li>
+                    <p> **email </p>
+                </li>
+                <li>
+                    <p> **phone </p>
+                </li>
+            </ul>
+            <hr>
+            <ul type="none">
+                <h5> Legal </h5>
+                <li>
+                    <a class="contact-links" href="privacy-policy.html"> Privacy Policy </a>
+                </li>
+                <li>
+                    <a class="contact-links" href="terms-of-service.html"> Terms of Service </a>
+                </li>
+            </ul>
+        </div>
+        <ul type="none">
+            <h5> Working Hours </h5>
+            <li>
+                <h6 class="mt-3"> Monday - Friday </h6>
+                <p> 07:00 - 18:00 </p>
+            </li>
+            <li>
+                <h6 class="mt-3"> Saturday - Sunday </h6>
+                <p> 10:00 - 18:00 </p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="container-fluid d-flex flex-column justify-content-evenly align-items-center g-5 p-5"
+        id="contacts_sub_section">
+        <hr>
+        <div class="d-flex justify-content-evenly align-items-center">
+            <i class="bi bi-facebook text-light h2 ms-2"></i>
+            <i class="bi bi-instagram text-light h2 ms-2"></i>
+            <i class="bi bi-google text-light h2 ms-2"></i>
+            <i class="bi bi-linkedin text-light h2 ms-2 me-5"></i>
+            &copy; All rights reserved | John's Chimney & Fireplace services
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                } else {
+                    entry.target.style.opacity = 0;
+                    entry.target.style.transform = 'translateY(50px)';
+                }
+            })
+        })
+        const hidden_sections = document.querySelectorAll('.services_section_divs');
+        hidden_sections.forEach((section) => observer.observe(section));
+
+
+        const observer1 = new IntersectionObserver((entries1) => {
+            entries1.forEach((entry1) => {
+                if (entry1.target) {
+                    if (entry1.isIntersecting) {
+                        entry1.target.style.filter = 'blur(0)';
+                        entry1.target.style.opacity = 1;
+                    } else {
+                        entry1.target.style.filter = 'blur(5px)';
+                        entry1.target.style.opacity = 0.5;
+                    }
+                }
+            });
+        });
+
+        const blurry_sectionText = document.querySelectorAll('#services_text_section');
+
+        blurry_sectionText.forEach((sectionText) => {
+            observer1.observe(sectionText);
+        });
+
+
+    </script>
+    <script src="menu.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

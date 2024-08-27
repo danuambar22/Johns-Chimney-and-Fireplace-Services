@@ -1,0 +1,124 @@
+body {
+    background-color: #f5f5dc !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#our-work_section h1,
+.our-work_service_section h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#our-work_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    color: #333333;
+}
+
+#our-work_section h1 {
+    text-align: center;
+    color: #b87773;
+    margin-bottom: 20px;
+}
+
+#our-work_intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#our-work_intro p {
+    padding: 0 10%;
+}
+
+.our-work_service_section {
+    margin-bottom: 60px;
+}
+
+.our-work_service_section h2 {
+    color: #b87773;
+    margin-bottom: 20px;
+}
+
+.our-work_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.our-work_gallery-item {
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.our-work_gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.our-work_gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.our-work_gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.our-work_gallery-item p {
+    padding: 20px;
+    color: #f5f5dc;
+    margin: 0;
+}
+
+.our-work_testimonial_section {
+    background: linear-gradient(135deg, #333333, #444444);
+    border: 1px solid #b87773;
+}
+
+.our-work_testimonials p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.our-work_testimonials h2 {
+    color: #b87773;
+}
+
+.our-work_testimonials p {
+    font-size: 1.1rem;
+}
+
+.our-work_testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #333333;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    .our-work_gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .our-work_gallery-item {
+        margin-bottom: 20px;
+    }
+}

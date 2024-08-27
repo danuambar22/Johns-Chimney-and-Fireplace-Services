@@ -1,0 +1,141 @@
+body {
+    background-color: #f5f5dc !important;
+}
+
+#about-us_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5dc;
+    color: #333333;
+}
+
+#about-us_section h1 {
+    text-align: center;
+    color: #b87773;
+    margin-bottom: 20px;
+}
+
+#about-us_intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about-us_intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#about-us_mission {
+    background-color: #333333;
+    color: #f5f5dc;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#about-us_mission h2 {
+    color: #b87773;
+    margin-bottom: 20px;
+}
+
+#about-us_team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.about-us_team-member {
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us_team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-us_team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-us_team-member img:hover {
+    transform: scale(1.05);
+}
+
+.about-us_team-member h3 {
+    color: #b87773;
+    margin-bottom: 10px;
+}
+
+.about-us_team-member p {
+    color: #f5f5dc;
+    margin: 0;
+}
+
+#about-us_history {
+    background-color: #b87773;
+    color: #f5f5dc;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+#about-us_history h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-us_history p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.accordion-item {
+    background-color: #b87773 !important;
+    color: #f5f5dc !important;
+    border-radius: 10px;
+    border: #2e2e2e 2px solid;
+}
+
+.accordion-button {
+    background-color: #2e2e2e !important;
+    color: #f5f5dc !important;
+    border: none !important;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #333333 !important;
+}
+
+.accordion-button:focus {
+    background-color: #2e2e2e !important;
+    color: #f5f5dc !important; 
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    background-color: #b87773 !important;
+    color: #f5f5dc !important;
+    border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+    #about-us_team {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us_team-member {
+        margin-bottom: 20px;
+    }
+}

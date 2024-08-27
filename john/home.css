@@ -1,0 +1,306 @@
+body {
+    background-color: #2e2e2e !important;
+}
+
+#Home_footer_overlay {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/GettyImages-1355602771.webp');
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(20%);
+    box-shadow: inset 0 0 50px #2e2e2e;
+    z-index: 1;
+    animation: background-move 10s infinite alternate;
+}
+
+@keyframes background-move {
+    0% {
+        background-position: center top;
+    }
+
+    100% {
+        background-position: center bottom;
+    }
+}
+
+#Home_footer {
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    filter: brightness(100%);
+    z-index: 2;
+}
+
+#Home_footer_div div {
+    width: 50%;
+}
+
+#Home_footer_request cite {
+    color: #ddd;
+}
+
+@media (max-width: 880px) {
+    #Home_footer_div {
+        flex-direction: column-reverse;
+    }
+
+    #Home_footer_div div {
+        width: 100%;
+    }
+
+    #Home_footer_div button {
+        font-size: small;
+        padding: 0;
+    }
+
+    #Home_footer_request p {
+        font-size: 0.75rem;
+    }
+
+    #Home_footer_request cite {
+        font-size: 1rem;
+    }
+
+    #Home_footer_service ul {
+        font-size: 1rem;
+    }
+
+    #Home_footer_service li:hover {
+        transform: scale(1.1);
+        text-decoration: underline;
+        transition: transform 0.3s ease-out, text-decoration 0.3s ease-out;
+    }
+}
+
+#Home_footer_request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Home_footer button {
+    background-color: #b87773;
+    color: #2e2e2e;
+    border: 2px solid #2e2e2e;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+    transform-origin: center;
+}
+
+#Home_footer button:hover {
+    border: 2px solid #f5f5dc;
+    background: linear-gradient(#b87773, #000000);
+    color: #f5f5dc;
+    transform: scale(1.1);
+}
+
+#Home_footer_request p {
+    font-family: serif;
+    color: #f5f5dc;
+    letter-spacing: 2px;
+}
+
+#Home_footer_service {
+    padding: 0 0 0 5rem;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f5f5dc;
+    transition: all 1s ease-in-out;
+}
+
+@media (min-width:881px) {
+    #Home_footer_service li:hover {
+        transform: scale(1.1);
+        text-decoration: underline;
+        transition: transform 0.3s ease-out, text-decoration 0.3s ease-out;
+    }
+}
+
+.about-us-section {
+    background: linear-gradient(120deg, #f5f5dc, #b87773);
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.about-us-section,
+.certified-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-us-section.visible,
+.certified-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-us-img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-in-out;
+}
+
+.about-us-text h1 {
+    font-size: 3rem;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.about-us-text p {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-us-text .btn-custom {
+    padding: 0.7rem 2rem;
+    background-color: #b87773;
+    color: #f5f5dc;
+    border: none;
+    transition: background-color 0.5s ease, transform 0.5s;
+}
+
+.about-us-text .btn-custom:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.about-us-img:hover {
+    transform: scale(1.1);
+}
+
+.certified-section {
+    background-color: #333;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.certified-icons {
+    padding: 2rem;
+}
+
+.certified-icon {
+    font-size: 2rem;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, color 0.5s;
+}
+
+.certified-icon i {
+    font-size: 3rem;
+    color: goldenrod;
+}
+
+.certified-icon:hover i {
+    transform: scale(1.2);
+    color: #f5f5dc;
+}
+
+.certified-text h1 {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1.5rem;
+}
+
+.certified-text p {
+    font-size: 1.2rem;
+}
+
+.certified-text .btn-custom {
+    padding: 0.7rem 2rem;
+    background-color: #b87773;
+    color: #f5f5dc;
+    border: none;
+    transition: background-color 0.5s ease, transform 0.5s;
+}
+
+.certified-text .btn-custom:hover {
+    background-color: goldenrod;
+    transform: scale(1.05);
+}
+
+
+#see-our-work_section {
+    background-image: url('images/see-our-work.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0px 0px 20px #2e2e2e;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 12;
+    color: #f5f5dc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.overlay h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px #2e2e2e;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.see-our-work-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #b87773;
+    border: 2px solid #2e2e2e;
+    color: #f5f5dc;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #2e2e2e;
+}
+
+.see-our-work-btn:hover {
+    background-color: #333333;
+    border: 2px solid #f5f5dc;
+    box-shadow: 0px 0px 30px #b87773;
+    transform: scale(1.05);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 880px) {
+    .overlay h2 {
+        font-size: 2rem;
+    }
+
+    .see-our-work-btn {
+        font-size: 1.5rem;
+    }
+}
